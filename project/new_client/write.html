@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <title>Post Write</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <h1>게시물 작성</h1>
+    <form>
+      <div class="form-group">
+        <label for="author">Author</label>
+        <input type="text" class="form-control" id="author">
+      </div>
+      <div class="form-group">
+        <label for="title">Title</label>
+        <input type="text" class="form-control" id="title">
+      </div>
+      <div class="form-group">
+        <label for="content">Content</label>
+        <textarea class="form-control" id="content" rows="10"></textarea>
+      </div>
+    </form>
+    <button id="cancelBtn" type="button" class="btn btn-secondary">취소</button>
+    <button id="saveBtn" type="button" class="btn btn-primary">저장</button>
+  </div>
+  <script src="js/api.js"></script>
+  <script src="js/write.js"></script>
+</body>
+
+</html>
