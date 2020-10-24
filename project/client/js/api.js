@@ -31,3 +31,23 @@ const postPost = function({author, title, content}) {
         })
     }).then(response => response.json())
 }
+
+const updatePost = function(no) {
+    return fetch(`${HOST}/post/${no}`, {
+        method: "PUT",
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+            author: author.value,
+            title: title.value,
+            content: content.value
+        })
+    })
+}
+
+const deletePost = function(no) {
+    return fetch(`${HOST}/post/${no}`, {
+        method: "DELETE"
+    })
+}

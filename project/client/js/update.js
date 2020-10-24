@@ -9,17 +9,7 @@ getPost(no)
 })
 
 updateBtn.addEventListener("click", () => {
-    fetch(`${HOST}/post/${no}`, {
-        method: "PUT",
-        headers: {
-            'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-            author: author.value,
-            title: title.value,
-            content: content.value
-        })
-    })
+    updatePost(no)
     .then(() => {
         alert("게시물이 수정되었습니다.")
         window.location.href = "/index.html"

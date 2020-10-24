@@ -9,9 +9,7 @@ getPost(no)
 });
 
 deleteBtn.addEventListener("click", () => {
-    fetch(`${HOST}/post/${no}`, {
-        method: "DELETE"
-    })
+    deletePost(no)
     .then(()=> {
         alert("게시물이 삭제되었습니다.")
         window.location.href = "/index.html"
