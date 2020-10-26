@@ -1,3 +1,6 @@
+import { postPost } from './api.js';
+import { getElement, author, title, content } from './dom.js'
+
 const cancelBtn = getElement("cancelBtn")
 const saveBtn = getElement("saveBtn")
 

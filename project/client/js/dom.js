@@ -7,7 +7,9 @@ const create = function(elem) {
 }
 
 const append = function(parent,childArr) {
-    return childArr.map(child => parent.appendChild(child))
+    childArr.forEach(child => {
+        parent.appendChild(child)
+    });
 }
 
 const author = getElement("author")
@@ -17,3 +19,4 @@ const content = getElement("content")
 const params = new URLSearchParams(window.location.search);
 const no = params.get("no");
 
+export { getElement, create, append, author, title, content, no }

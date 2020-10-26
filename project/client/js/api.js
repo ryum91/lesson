@@ -1,3 +1,5 @@
+import { author, title, content, no } from './dom.js';
+
 const HOST = "http://localhost:8080"
 
 const getPosts = function() {
@@ -51,3 +53,5 @@ const deletePost = function(no) {
         method: "DELETE"
     })
 }
+
+export { HOST, getPosts, getPost, postPost, updatePost, deletePost };

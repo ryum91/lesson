@@ -1,3 +1,6 @@
+import { getPosts } from './api.js';
+import { getElement, create, append, author, title, content } from './dom.js';
+
 const format = dateFns.format
 
 const writeBtn = getElement("writeBtn")

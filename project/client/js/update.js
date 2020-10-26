@@ -1,3 +1,6 @@
+import { getPost, updatePost } from './api.js'
+import { author, title, content, getElement, no} from './dom.js'
+
 const updateBtn = getElement("updateBtn");
 const cancelBtn = getElement("cancelBtn");
 
