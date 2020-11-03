@@ -20,7 +20,7 @@ const getPost = function(no) {
     })
 }
 
-const postPost = function({author, title, content}) {
+const postPost = function(author, title, content) {
     return fetch(`${HOST}/post`, {
         method : "POST",
         headers: {

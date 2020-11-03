@@ -4,13 +4,12 @@
 <head>
   <title>Post Write</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
 
 <body>
-  <div class="container">
-    <h1>게시물 작성</h1>
+  <div class="container mt-3">
+    <h1 class="mb-3">게시물 작성</h1>
     <form>
       <div class="form-group">
         <label for="author">Author</label>
@@ -25,10 +24,10 @@
         <textarea class="form-control" id="content" rows="10"></textarea>
       </div>
     </form>
-    <button id="cancelBtn" type="button" class="btn btn-secondary">취소</button>
-    <button id="saveBtn" type="button" class="btn btn-primary">저장</button>
+    <button type="button" class="btn btn-secondary">취소</button>
+    <button type="button" class="btn btn-primary" id="saveButton">저장</button>
   </div>
-  <script type="module" src="js/write.js"></script>
+  <script src="dist/write.js"></script>
 </body>
 
 </html>
